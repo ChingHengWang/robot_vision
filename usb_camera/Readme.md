@@ -17,9 +17,13 @@
   * choose the correct device name!
   * remember use root !
   * change topic name
+
 		***node name="uvc_cam_node" pkg="uvc_camera" type="uvc_camera_node" output="screen"***
+
   * change device name
+
 		***arg name="device" default="/dev/video0" /***
+
 * step3. rosrun image_view image_view image:=/camera/rgb/image_color
   * create a window to display image!
 
