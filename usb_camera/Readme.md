@@ -13,13 +13,13 @@
 ## Command Step
 * step1. roscore
 * step2. roslaunch rbx1_vision uvc_cam.launch device:=/dev/video1
-** after this cmd, you can see the image raw data is on the topic!
-** choose the correct device name!
-** remember use root !
-** change topic name
-*** ***<node name="uvc_cam_node" pkg="uvc_camera" type="uvc_camera_node" output="screen">***
-** change device name
-*** ***<arg name="device" default="/dev/video0" />***
+  * after this cmd, you can see the image raw data is on the topic!
+  * choose the correct device name!
+  * remember use root !
+  * change topic name
+    * ***<node name="uvc_cam_node" pkg="uvc_camera" type="uvc_camera_node" output="screen">***
+  * change device name
+    * ***<arg name="device" default="/dev/video0" />***
 * step3. rosrun image_view image_view image:=/camera/rgb/image_color
-** create a window to display image!
+  * create a window to display image!
 
